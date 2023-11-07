@@ -45,10 +45,10 @@ const inputSubmit = document.body.querySelector("#input_submit");
 const translate = () => {
 
     event.preventDefault();
-
+    let inputValue = inputText.value.toUpperCase();
     outputText.textContent = " ";
 
-    for (let char of inputText.value.toUpperCase()) {
+    for (let char of inputValue) {
 
         let charToMorse = morseAlphabet.filter((elt) => elt.letter === char);
 
